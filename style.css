@@ -176,13 +176,12 @@ body {
 
 .info-box {
     position: absolute;
-    margin-bottom: 5%;
     bottom: 20px;
     right: 20px;
     background-color: rgba(226, 225, 225, 0.2);
     color: white;
     width: 22.5%;
-    height: 45%;
+    height: 47%;
     border-radius: 20px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); 
@@ -206,7 +205,7 @@ body {
     cursor: pointer;
     border-radius: 20px;
     font-size: 0.8rem;
-    height: 120%;
+    height: 110%;
     flex: 1; 
     margin: 0 5px;
     backdrop-filter: blur(10px);
@@ -216,4 +215,38 @@ body {
 
 .product-option:first-child, .product-option:last-child {
     margin: 0;
+}
+
+
+.info-box-image {
+    width: 95%; 
+    height: auto; 
+    object-fit: cover;
+    border-radius: 15px; 
+    margin-top: auto; 
+    margin-bottom: 3%; 
+}
+
+.sale-text {
+    align-self: flex-start; 
+    width: 100%; 
+    font-family: Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    padding-left: 10px; 
+    font-size: 0.8rem;
+    margin-top: 19%;
+}
+
+.product-name {
+    align-self: flex-start; 
+    width: 100%; 
+    font-family: Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    padding-left: 10px; 
+    font-size: 1.5rem;
+    font-weight: bold;
 }
