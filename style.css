@@ -79,7 +79,7 @@ html, body, ul, li, p, h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    padding-top: 5px;
+    margin-top: -7.5px;
 }
 
 .toolbar-logo {
@@ -160,3 +160,16 @@ body {
     color: #000;
     font-size: 1.75em;
 }
+
+.rounded-video {
+    border-radius: 15px; 
+    margin: -15px auto 20px; 
+    display: block;
+    width: 97%;
+    height: auto;
+    max-width: none; /* Removes the maximum width restriction */
+    height: auto; /* Keeps the video's height in proportion to its width */
+  }
+
+  
+  
