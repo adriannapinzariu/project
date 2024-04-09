@@ -78,13 +78,10 @@ html, body, ul, li, p, h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 2%;
     margin-top: -7.5px;
-}
 
-.toolbar-logo {
-    flex-grow: 1;
-    
+    white-space: nowrap; 
 }
 
 .toolbar-item {
@@ -98,8 +95,9 @@ html, body, ul, li, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .toolbar-nav-items {
-    display: flex; 
-    padding-left: 400px; 
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
     padding-right: 20px; 
     padding-top: 10px;
     padding-bottom: 10px
@@ -117,6 +115,7 @@ html, body, ul, li, p, h1, h2, h3, h4, h5, h6 {
     color: #333;
     padding-right: 30px;
     padding-left: 30px;
+    white-space: nowrap; 
 }  
 
 .segmented:last-child {
@@ -155,21 +154,40 @@ body {
 }
 
 .toolbar-logo a {
-    font-family: 'Vogue', sans-serif; 
+    font-family: 'vogue', sans-serif; 
     text-decoration: none;
     color: #000;
-    font-size: 1.75em;
+    font-size: 1.5rem; 
 }
 
 .rounded-video {
     border-radius: 15px; 
     margin: -15px auto 20px; 
     display: block;
-    width: 97%;
     height: auto;
-    max-width: none; /* Removes the maximum width restriction */
-    height: auto; /* Keeps the video's height in proportion to its width */
+    max-width: none;
+    height: auto;
+    width: 97%;
   }
 
   
-  
+  .video-container {
+    position: relative;  
+    width: 100%; 
+    margin: auto; 
+}
+
+
+.info-box {
+    position: absolute;
+    bottom: 20px; 
+    right: 20px;
+    background-color: rgba(226, 225, 225, 0.2); 
+    color: white; 
+    margin-right: 1%;
+    width: 22.5%;
+    height: 45%;
+    border-radius: 10px; 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+}
