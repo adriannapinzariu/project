@@ -80,7 +80,6 @@ html, body, ul, li, p, h1, h2, h3, h4, h5, h6 {
     align-items: center;
     padding: 10px 2%;
     margin-top: -7.5px;
-
     white-space: nowrap; 
 }
 
@@ -100,7 +99,7 @@ html, body, ul, li, p, h1, h2, h3, h4, h5, h6 {
     flex-grow: 1;
     padding-right: 20px; 
     padding-top: 10px;
-    padding-bottom: 10px
+    padding-bottom: 10px;
     
 }
 
@@ -157,37 +156,64 @@ body {
     font-family: 'vogue', sans-serif; 
     text-decoration: none;
     color: #000;
-    font-size: 1.5rem; 
+    font-size: 1.75rem; 
 }
 
 .rounded-video {
     border-radius: 15px; 
     margin: -15px auto 20px; 
     display: block;
-    height: auto;
     max-width: none;
-    height: auto;
     width: 97%;
   }
 
   
-  .video-container {
+.video-container {
     position: relative;  
     width: 100%; 
     margin: auto; 
 }
 
-
 .info-box {
     position: absolute;
-    bottom: 20px; 
+    margin-bottom: 5%;
+    bottom: 20px;
     right: 20px;
-    background-color: rgba(226, 225, 225, 0.2); 
-    color: white; 
-    margin-right: 1%;
+    background-color: rgba(226, 225, 225, 0.2);
+    color: white;
     width: 22.5%;
     height: 45%;
-    border-radius: 10px; 
+    border-radius: 20px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); 
+    z-index: 1;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-right: 1%;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%; 
+    margin-top: -32.5px; 
+}
+
+.product-option {
+    background-color: rgba(226, 225, 225, 0.2);
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    height: 120%;
+    flex: 1; 
+    margin: 0 5px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+
+.product-option:first-child, .product-option:last-child {
+    margin: 0;
 }
