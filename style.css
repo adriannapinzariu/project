@@ -5,7 +5,7 @@ body {
 }
 
 .main-header {
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, 0);
     padding-bottom: 10px;
 }
 
@@ -67,4 +67,79 @@ button {
     font-size: 22px;
     cursor: pointer;
     margin: 5px;
+}
+
+html, body, ul, li, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.toolbar-logo {
+    flex-grow: 1;
+    
+}
+
+.toolbar-item {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 0.81em;
+    padding: 11px 15px; 
+    background-color: rgb(239, 236, 236); 
+    transition: background-color 0.3s ease; 
+}
+
+.toolbar-nav-items {
+    display: flex; 
+    padding-left: 400px; 
+    padding-right: 20px; 
+    padding-top: 10px;
+    padding-bottom: 10px
+    
+}
+
+.segmented:first-child {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-left: 45px;
+}
+
+
+.segmented {
+    color: #333;
+    padding-right: 30px;
+    padding-left: 30px;
+}  
+
+.segmented:last-child {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-right: none; 
+    padding-right: 45px;
+    margin-right: 0;
+}
+
+.segmented:hover {
+    background-color: #555;
+}
+
+.toolbar-button {
+    border-radius: 25px; 
+    background-color: #333;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-left: -15px;
+}
+
+.toolbar-item:hover, .toolbar-button:hover {
+    background-color: #333; 
+    color: #fff;
+    text-decoration: none; 
 }
