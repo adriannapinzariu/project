@@ -23,27 +23,12 @@
  * 
  */
 
-
-/*const FRESH_PRINCE_URL = "https://upload.wikimedia.org/wikipedia/en/3/33/Fresh_Prince_S1_DVD.jpg";
-const CURB_POSTER_URL = "https://m.media-amazon.com/images/M/MV5BZDY1ZGM4OGItMWMyNS00MDAyLWE2Y2MtZTFhMTU0MGI5ZDFlXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg";
-const EAST_LOS_HIGH_POSTER_URL = "https://static.wikia.nocookie.net/hulu/images/6/64/East_Los_High.jpg";
-const WEST_LOS_HIGH_POSTER_URL = "https://static.wikia.nocookie.net/hulu/images/6/64/East_Los_High.jpg";*/
-
-// This is an array of strings (TV show titles)
-let titles = [
-    "Fresh Prince of Bel Air",
-    "Curb Your Enthusiasm",
-    "East Los High", 
-    "West Los High"
-];
-// Your final submission should have much more data than this, and 
-// you should use more than just an array of strings to store it all.
-
-document.addEventListener("DOMContentLoaded", function() {
+ document.addEventListener("DOMContentLoaded", function() {
     fetch('skincare-data.json')
         .then(response => response.json())
         .then(data => {
-            showCards(data);
+            window.skinCareProducts = data; 
+            showCards(window.skinCareProducts); 
         })
         .catch(error => console.error('Cannot Load Data!:', error));
 });
@@ -69,7 +54,44 @@ function showCards(skinCareProducts) {
         cardContainer.appendChild(nextCard);
     });
 }
-     
+
+
+function sortCatalogue() {
+    // Check if the skincare products data is loaded
+    console.log('Sorting started');
+    if (!window.skinCareProducts) {
+        console.error("Skincare products data is not loaded yet.");
+        return;
+    }
+
+    const sortBy = document.getElementById('sort-menu').value;
+    let products = [...window.skinCareProducts]; 
+    switch(sortBy) {
+        case 'price-asc':
+            products.sort((a, b) => a.price - b.price);
+            break;
+        case 'price-desc':
+            products.sort((a, b) => b.price - a.price);
+            break;
+        case 'sale-desc':
+            products.sort((a, b) => parseFloat(a.sale) - parseFloat(b.sale));
+            break;
+        case 'sale-asc':
+            products.sort((a, b) => parseFloat(b.sale) - parseFloat(a.sale));
+            break;
+        case 'alpha-asc':
+            products.sort((a, b) => a.item.localeCompare(b.item));
+            break;
+        case 'alpha-desc':
+            products.sort((a, b) => b.item.localeCompare(a.item));
+            break;
+    }
+
+    showCards(products); // Re-display the sorted products
+}
+
+
+
 
 function editCardContent(card, newTitle, newImageURL) {
     card.style.display = "block";
@@ -96,6 +118,9 @@ function quoteAlert() {
 }
 
 function removeLastCard() {
-    titles.pop(); // Remove last item in titles array
-    showCards(); // Call showCards again to refresh
+    if (window.skinCareProducts && window.skinCareProducts.length > 0) {
+        window.skinCareProducts.pop(); 
+        showCards(window.skinCareProducts); 
+    }
 }
+
