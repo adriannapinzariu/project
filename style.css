@@ -365,7 +365,7 @@ body {
     padding: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     z-index: 3;
-    max-width: calc(100% - 40px); /* Subtracting the left and right padding */
+    max-width: calc(100% - 40px);  
 }
 
 .image-icon {
