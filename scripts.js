@@ -24,45 +24,52 @@
  */
 
 
-const FRESH_PRINCE_URL = "https://upload.wikimedia.org/wikipedia/en/3/33/Fresh_Prince_S1_DVD.jpg";
+/*const FRESH_PRINCE_URL = "https://upload.wikimedia.org/wikipedia/en/3/33/Fresh_Prince_S1_DVD.jpg";
 const CURB_POSTER_URL = "https://m.media-amazon.com/images/M/MV5BZDY1ZGM4OGItMWMyNS00MDAyLWE2Y2MtZTFhMTU0MGI5ZDFlXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg";
 const EAST_LOS_HIGH_POSTER_URL = "https://static.wikia.nocookie.net/hulu/images/6/64/East_Los_High.jpg";
+const WEST_LOS_HIGH_POSTER_URL = "https://static.wikia.nocookie.net/hulu/images/6/64/East_Los_High.jpg";*/
 
 // This is an array of strings (TV show titles)
 let titles = [
     "Fresh Prince of Bel Air",
     "Curb Your Enthusiasm",
-    "East Los High"
+    "East Los High", 
+    "West Los High"
 ];
 // Your final submission should have much more data than this, and 
 // you should use more than just an array of strings to store it all.
 
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('skincare-data.json')
+        .then(response => response.json())
+        .then(data => {
+            showCards(data);
+        })
+        .catch(error => console.error('Cannot Load Data!:', error));
+});
 
-// This function adds cards the page to display the data in the array
-function showCards() {
+
+function showCards(skinCareProducts) {
     const cardContainer = document.getElementById("card-container");
-    cardContainer.innerHTML = "";
-    const templateCard = document.querySelector(".card");
-    
-    for (let i = 0; i < titles.length; i++) {
-        let title = titles[i];
+    cardContainer.innerHTML = ""; 
 
-        // This part of the code doesn't scale very well! After you add your
-        // own data, you'll need to do something totally different here.
-        let imageURL = "";
-        if (i == 0) {
-            imageURL = FRESH_PRINCE_URL;
-        } else if (i == 1) {
-            imageURL = CURB_POSTER_URL;
-        } else if (i == 2) {
-            imageURL = EAST_LOS_HIGH_POSTER_URL;
-        }
-
-        const nextCard = templateCard.cloneNode(true); // Copy the template card
-        editCardContent(nextCard, title, imageURL); // Edit title and image
-        cardContainer.appendChild(nextCard); // Add new card to the container
-    }
+    skinCareProducts.forEach(product => {
+        const nextCard = document.createElement("div");
+        nextCard.classList.add("card");
+        
+        const cardContentHTML = `
+            <h2>${product.brand} - ${product.item}</h2>
+            <img src="${product.image}" alt="${product.item} Poster">
+            <p>Sale: ${product.sale}</p>
+            <p>Price: £${product.price}</p>
+            <a href="${product.url}" target="_blank">More Info</a>
+        `;
+        
+        nextCard.innerHTML = cardContentHTML;
+        cardContainer.appendChild(nextCard);
+    });
 }
+     
 
 function editCardContent(card, newTitle, newImageURL) {
     card.style.display = "block";

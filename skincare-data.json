@@ -2,7 +2,7 @@
     {
       "brand": "Cerave",
       "item": "Hydrating Toner For Face",
-      "image": "./images/cerave.png",
+      "image": "./image_data/cerave.png",
       "url": "https://www.target.com/p/cerave-hydrating-toner-for-face-alcohol-free-facial-toner-for-normal-to-dry-skin-6-8-fl-oz/-/A-84230687",
       "sale": "-30%",
       "price": 9.99
@@ -10,7 +10,7 @@
     {
       "brand": "Thayers",
       "item": "Witch Hazel Rose Petal Facial Toner",
-      "image": "./images/thayers.png",
+      "image": "./image_data/thayers.png",
       "url": "https://www.walmart.com/ip/Thayers-Witch-Hazel-Rose-Petal-Facial-Toner-8-5-fl-oz/997440513",
       "sale": "-15%",
       "price": 7.97
@@ -18,7 +18,7 @@
     {
       "brand": "Dr.Jart+",
       "item": "Cicapair Sensitive Skin Moisturizer",
-      "image": "./images/jart.avif",
+      "image": "./image_data/jart.avif",
       "url": "https://www.drjart.com/product/28258/116789/moisturizers/cicapairtm-sensitive-skin-moisturizer-for-redness",
       "sale": "-20%",
       "price": 52.00
@@ -26,7 +26,7 @@
     {
       "brand": "Some By Mi",
       "item": "30 Days Miracle Toner",
-      "image": "./images/SomeByMi.webp",
+      "image": "./image_data/SomeByMi.webp",
       "url": "https://jundostudios.com/products/aha-bha-pha-30-days-miracle-toner-korean-skincare",
       "sale": "-10%",
       "price": 16.95
