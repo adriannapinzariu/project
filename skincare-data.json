@@ -30,6 +30,70 @@
       "url": "https://jundostudios.com/products/aha-bha-pha-30-days-miracle-toner-korean-skincare",
       "sale": "-10%",
       "price": 16.95
+    },
+    {
+      "brand": "The Ordinary",
+      "item": "Niacinamide 10% + Zinc 1%",
+      "image": "./image_data/theordinary.png",
+      "url": "https://theordinary.com/product/rdn-niacinamide-10pct-zinc-1pct-30ml",
+      "sale": "-5%",
+      "price": 5.90
+    },
+    {
+      "brand": "La Roche-Posay",
+      "item": "Effaclar Purifying Foaming Gel",
+      "image": "./image_data/larocheposay.jpg",
+      "url": "https://www.laroche-posay.us/face-and-body-skin-care/face-products/facial-cleanser/effaclar-purifying-foaming-gel-cleanser-for-oily-skin-3337872411083.html",
+      "sale": "-25%",
+      "price": 14.99
+    },
+    {
+      "brand": "Cetaphil",
+      "item": "Gentle Skin Cleanser",
+      "image": "./image_data/cetaphil.webp",
+      "url": "https://www.cetaphil.com/us/product/gentle-skin-cleanser",
+      "sale": "-10%",
+      "price": 9.52
+    },
+    {
+      "brand": "Neutrogena",
+      "item": "Hydro Boost Water Gel",
+      "image": "./image_data/neutrogena.jpeg",
+      "url": "https://www.neutrogena.com/products/skincare/hydro-boost-water-gel-with-hyaluronic-acid-for-dry-skin/6811047.html",
+      "sale": "-20%",
+      "price": 21.49
+    },
+    {
+      "brand": "COSRX",
+      "item": "Advanced Snail 96 Mucin Power Essence",
+      "image": "./image_data/cosrx.png",
+      "url": "https://www.cosrx.com/products/advanced-snail-96-mucin-power-essence",
+      "sale": "-15%",
+      "price": 23.00
+    },
+    {
+      "brand": "Paula's Choice",
+      "item": "Skin Perfecting 2% BHA Liquid Exfoliant",
+      "image": "./image_data/paulaschoice.avif",
+      "url": "https://www.paulaschoice.com/skin-perfecting-2pct-bha-liquid-exfoliant/201-2010.html",
+      "sale": "-5%",
+      "price": 29.50
+    },
+    {
+      "brand": "Pixi",
+      "item": "Glow Tonic",
+      "image": "./image_data/pixi.jpeg",
+      "url": "https://www.pixibeauty.com/products/glow-tonic",
+      "sale": "-10%",
+      "price": 15.00
+    },
+    {
+      "brand": "Tatcha",
+      "item": "The Water Cream",
+      "image": "./image_data/tatcha.jpeg",
+      "url": "https://www.tatcha.com/product/WATER-CREAM.html",
+      "sale": "-10%",
+      "price": 68.00
     }
   ]
   
