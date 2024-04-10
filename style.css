@@ -90,21 +90,23 @@ html, body, ul, li, p, h1, h2, h3, h4, h5, h6 {
     
 }
 
-.segmented:first-child {
-    padding-left: 105px;
-    border-radius: 25px;
-    padding-right: 45px;
-    margin-right: 0;
-}
-
-
 .segmented {
     color: #333;
     padding-right: 30px;
     padding-left: 30px;
     white-space: nowrap; 
-    
+    border-radius: 0; 
 }  
+
+.segmented:first-child {
+    padding-left: 45px;
+    border-left: none; 
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    margin-left: 0;
+
+
+}
 
 .segmented:last-child {
     border-top-right-radius: 25px;
@@ -185,16 +187,16 @@ body {
 
 .top-align-container {
     display: flex;
-    width: 100%; /* Take full width to allow space for alignment */
-    justify-content: space-between; /* Align items on opposite ends */
-    align-items: center; /* Center items vertically */
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .info-box::after::before {
-    content: '➤'; /* This is a simple text representation of an arrow */
+    content: '➤'; 
     color: #333;
-    font-size: 20px; /* Adjust the size as needed */
-    transform: rotate(45deg); /* Rotate the arrow to point diagonally top right */
+    font-size: 20px;
+    transform: rotate(45deg); 
 }
 
 
