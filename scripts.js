@@ -41,19 +41,22 @@ function showCards(skinCareProducts) {
     skinCareProducts.forEach(product => {
         const nextCard = document.createElement("div");
         nextCard.classList.add("card");
-        
+        nextCard.style.cursor = "pointer"; 
+        nextCard.onclick = () => window.open(product.url, "_blank"); 
+
         const cardContentHTML = `
             <h2>${product.brand} - ${product.item}</h2>
             <img src="${product.image}" alt="${product.item} Poster">
             <p>Sale: ${product.sale}</p>
             <p>Price: £${product.price}</p>
-            <a href="${product.url}" target="_blank">More Info</a>
+            <p class="more-info-text">More Info</p> 
         `;
         
         nextCard.innerHTML = cardContentHTML;
         cardContainer.appendChild(nextCard);
     });
 }
+
 
 
 function sortCatalogue() {
