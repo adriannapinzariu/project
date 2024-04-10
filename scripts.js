@@ -90,7 +90,18 @@ function sortCatalogue() {
     showCards(products); // Re-display the sorted products
 }
 
+function searchCatalog() {
+    const searchText = document.getElementById('search-input').value.toLowerCase();
+    
 
+    const filteredProducts = window.skinCareProducts.filter(product => 
+        product.brand.toLowerCase().includes(searchText) || 
+        product.item.toLowerCase().includes(searchText)
+    );
+    
+
+    showCards(filteredProducts);
+}
 
 
 function editCardContent(card, newTitle, newImageURL) {
