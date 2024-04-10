@@ -65,7 +65,7 @@
     },
     {
       "brand": "COSRX",
-      "item": "Advanced Snail 96 Mucin Power Essence",
+      "item": "Advanced Snail Mucin Power Essence",
       "image": "./image_data/cosrx.png",
       "url": "https://www.cosrx.com/products/advanced-snail-96-mucin-power-essence",
       "sale": "-15%",
@@ -73,7 +73,7 @@
     },
     {
       "brand": "Paula's Choice",
-      "item": "Skin Perfecting 2% BHA Liquid Exfoliant",
+      "item": "Skin Perfecting BHA Liquid Exfoliant",
       "image": "./image_data/paulaschoice.avif",
       "url": "https://www.paulaschoice.com/skin-perfecting-2pct-bha-liquid-exfoliant/201-2010.html",
       "sale": "-5%",

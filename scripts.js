@@ -45,11 +45,11 @@ function showCards(skinCareProducts) {
         nextCard.onclick = () => window.open(product.url, "_blank"); 
 
         const cardContentHTML = `
-            <h2>${product.brand} - ${product.item}</h2>
+            <h2>${product.brand}</h2>
+            <p class="product-item">${product.item}</p>
             <img src="${product.image}" alt="${product.item} Poster">
             <p>Sale: ${product.sale}</p>
             <p>Price: £${product.price}</p>
-            <p class="more-info-text">More Info</p> 
         `;
         
         nextCard.innerHTML = cardContentHTML;
