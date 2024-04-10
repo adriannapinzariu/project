@@ -45,13 +45,20 @@ function showCards(skinCareProducts) {
         nextCard.onclick = () => window.open(product.url, "_blank"); 
 
         const cardContentHTML = `
+        <div class="card-content">
             <h2>${product.brand}</h2>
             <p class="product-item">${product.item}</p>
-            <img src="${product.image}" alt="${product.item} Poster">
-            <p>Sale: ${product.sale}</p>
-            <p>Price: £${product.price}</p>
-        `;
-        
+            <div class="image-container">
+                <img src="${product.image}" alt="${product.item} Poster">
+            </div>
+            <div class="price-sale-container">
+                <p>Sale: ${product.sale}</p>
+                <p>Price: £${product.price}</p>
+            </div>
+        </div>
+    `;
+    
+    
         nextCard.innerHTML = cardContentHTML;
         cardContainer.appendChild(nextCard);
     });

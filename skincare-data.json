@@ -9,7 +9,7 @@
     },
     {
       "brand": "Thayers",
-      "item": "Witch Hazel Rose Petal Facial Toner",
+      "item": "Witch Hazel Rose Toner",
       "image": "./image_data/thayers.png",
       "url": "https://www.walmart.com/ip/Thayers-Witch-Hazel-Rose-Petal-Facial-Toner-8-5-fl-oz/997440513",
       "sale": "-15%",
@@ -17,7 +17,7 @@
     },
     {
       "brand": "Dr.Jart+",
-      "item": "Cicapair Sensitive Skin Moisturizer",
+      "item": "Cicapair Skin Moisturizer",
       "image": "./image_data/jart.avif",
       "url": "https://www.drjart.com/product/28258/116789/moisturizers/cicapairtm-sensitive-skin-moisturizer-for-redness",
       "sale": "-20%",
@@ -33,7 +33,7 @@
     },
     {
       "brand": "The Ordinary",
-      "item": "Niacinamide 10% + Zinc 1%",
+      "item": "Niacinamide 10% Zinc 1%",
       "image": "./image_data/theordinary.png",
       "url": "https://theordinary.com/product/rdn-niacinamide-10pct-zinc-1pct-30ml",
       "sale": "-5%",
@@ -41,7 +41,7 @@
     },
     {
       "brand": "La Roche-Posay",
-      "item": "Effaclar Purifying Foaming Gel",
+      "item": "Effaclar Pure Foam Gel",
       "image": "./image_data/larocheposay.jpg",
       "url": "https://www.laroche-posay.us/face-and-body-skin-care/face-products/facial-cleanser/effaclar-purifying-foaming-gel-cleanser-for-oily-skin-3337872411083.html",
       "sale": "-25%",
@@ -65,7 +65,7 @@
     },
     {
       "brand": "COSRX",
-      "item": "Advanced Snail Mucin Power Essence",
+      "item": "Snail Mucin Essence",
       "image": "./image_data/cosrx.png",
       "url": "https://www.cosrx.com/products/advanced-snail-96-mucin-power-essence",
       "sale": "-15%",
@@ -73,7 +73,7 @@
     },
     {
       "brand": "Paula's Choice",
-      "item": "Skin Perfecting BHA Liquid Exfoliant",
+      "item": "BHA Liquid Exfoliant",
       "image": "./image_data/paulaschoice.avif",
       "url": "https://www.paulaschoice.com/skin-perfecting-2pct-bha-liquid-exfoliant/201-2010.html",
       "sale": "-5%",
